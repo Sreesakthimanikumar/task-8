@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Movie Ticket Booking</h1>
+<h3>Movies</h3>
+<p>Spider Man - ₹150</p>
+<p>Lion King - ₹120</p>
+<p>Avengers - ₹180</p>
+<h3>Book Tickets</h3>
+<select id="movie">
+    <option value="0">Select Movie</option>
+    <option value="1">Spider Man</option>
+    <option value="2">Lion King</option>
+    <option value="3">Avengers</option>
+</select><br><br>
+<select id="time">
+    <option VALUE="">Select Time</option>
+    <option value="10 AM">10 AM</option>
+    <option value="2 PM">2 PM</option>
+    <option value="6 PM">6 PM</option>
+</select><br><br>
+<input id="email" placeholder="Enter Email"><br><br>
+<input id="tickets" type="number" placeholder="Number of Tickets"><br><br>
+<button onclick="book()">Book</button>
+<button onclick="resetForm()">Reset</button>
+<p id="total">Total: ₹0</p>
+<p id="message"></p>
+<h3>Your Bookings (<span id="count">0</span>)</h3>
+<input id="search" placeholder="Search movie" oninput="showBookings()">
+<div id="bookings">No bookings yet</div>
+<script src="script.js"></script>
+</body>
+</html>
